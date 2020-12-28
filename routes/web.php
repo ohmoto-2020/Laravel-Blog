@@ -10,5 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//ブログ一覧を表示
 Route::get('/', 'BlogController@showList')->name('blogs');
+//ブログ詳細画面を表示
+Route::get('/blog/{id}', 'BlogController@showDetail')->name('show');
